@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Este projeto é uma aplicação completa com **backend** e **frontend** integrados. A parte backend utiliza **Node.js** com um banco de dados [MySQL/SQLite], enquanto o frontend está estruturado em HTML, CSS e JavaScript, sendo servido por meio do **Live Server**.
+Este projeto é uma aplicação que faz a ligação entre ONGS e Voluntarios, completo com **backend** e **frontend** integrados. A parte backend utiliza **Node.js** com um banco de dados [MySQL/SQLite], enquanto o frontend está estruturado em HTML, CSS e JavaScript, sendo servido por meio do **Live Server**.
 
 ---
 
