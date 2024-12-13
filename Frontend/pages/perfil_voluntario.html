@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semente Social</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/catalogo.css">
+    <link rel="stylesheet" href="../css/perfil_voluntario.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="left-header">
+                <div class="avatar">
+                    <a href="#" id="avatar-link"><img src="../images/PFI (1).jpg" alt="avatar" /></a>
+                </div>
+                <div class="logo">
+                    <a href="./home_voluntario.html"> Semente<span class="s2">Social</span></a>
+                </div>
+            </div>
+            <div class="search-bar">
+                <input type="search" placeholder="Pesquise por ONGs">
+                <img src="../images/lupa.png" alt="Ícone de lupa">
+            </div>
+
+            <!-- Add a sidebar container -->
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <button class="close-btn">X</button>
+                </div>
+                <ul>
+                  <li><a href="../pages/matchs_realizados.html">Matchs Realizados</a></li><!-- Link para a MAtchs realizados -->
+                  <li><a href="../pages/perfil_voluntario.html">Editar Perfil</a></li>
+                  <li><a href="#" id="sair-btn">Sair</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="container">
+            <!-- Formulário para coleta de dados do usuário -->
+            <form>
+
+                <fieldset>
+                    <legend>Dados Pessoais</legend> 
+
+                    <label class="label" for="nome">Nome:</label>
+                    <input type="text" name="nome" required> <!-- Campo obrigatório -->
+
+                    <label class="label" for="dtnasc">Data de Nascimento:</label>
+                    <input type="date" name="dtnasc" required> <!-- Campo obrigatório -->
+
+                    <label class="label" for="tel">Telefone:</label>
+                    <input type="tel" name="tel" required> <!-- Campo obrigatório -->
+
+                    <label class="label" for="email">Email:</label>
+                    <input type="email" name="email" required> <!-- Campo obrigatório -->
+
+                    <label class="label" for="bio">Fale um pouco sobre você:</label>
+                    <textarea name="bio" cols="100"></textarea> 
+                </fieldset>
+
+                <fieldset>
+                    <legend>Localização</legend> 
+                    
+                    <!-- Menu suspenso para seleção de estado -->
+                    <label class="label" for="estado">Estado:</label>
+                    <select id="estado" name="estado">
+                        <option></option> <!-- Opção vazia padrão -->
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+
+                    <label class="label" for="cidade">Cidade:</label>
+                    <input type="text" name="cidade">
+
+                    <label class="label" for="end">Endereço:</label>
+                    <input type="text" name="end">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Foto:</legend> 
+
+                    <!-- Campo para upload de imagem do avatar -->
+                    <label class="label" for="foto">Avatar:</label>
+                    <input type="file" name="foto">
+                </fieldset>
+
+                <!-- Botão de submissão do formulário -->
+                <button type="submit">Atualizar informações</button>
+            </form>
+            <a href="#" class="excluirconta">Excluir conta</a>
+        </div>
+    </section>
+</main>
+<script src="../javascript/headerVoluntario.js"></script>
+<script src="../javascript/script_menulateral.js"></script>
+<script src="../javascript/sair.js"></script>
+<script src="../javascript/perfil_voluntario.js"></script>
+</body>
+</html>

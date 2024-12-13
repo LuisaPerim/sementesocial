@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - ONG</title>
+    <link rel="stylesheet" href="../css/ong_home.css">
+</head>
+<body>
+    <header>
+        <div class="avatar">
+            <a href="./home_ong.html">
+                <img src="../images/avatar.png" alt="Avatar da ONG">
+            </a>
+        </div>
+        <div class="header-buttons">
+            <button id="perfil-btn">Perfil</button>
+            <button id="sair-btn">Sair</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="voluntarios-section">
+            <h2>Essas são as pessoas que querem ajudar a sua ONG:</h2>
+            <div id="voluntarios-list" class="voluntarios-list">
+                <!-- Lista de voluntários será inserida aqui dinamicamente -->
+            </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const perfilBtn = document.getElementById('perfil-btn');
+
+            perfilBtn.addEventListener('click', () => {
+                // Redireciona para a página de perfil
+                window.location.href = './perfil_ong.html';
+            });
+        });
+    </script>
+    <script src="../javascript/ongHome.js"></script>
+    <script src="../javascript/sair.js"></script>
+</body>
+</html>

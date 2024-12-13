@@ -1,0 +1,138 @@
+main {
+    display: flex;
+    overflow-y: hidden;
+    background-color: #2D24EF;
+}
+   
+#left {
+    flex: 1;
+    padding: 0 50px;
+    margin-top: 20px;
+}
+   
+#right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+
+h2{
+    text-align: left;
+    padding-top: 40px;
+    font-size: 25px;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    width: 70%;
+    margin-top: 15px;
+    padding: 20px 30px;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+  
+
+fieldset {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+legend{
+    font-size: 16px;
+    text-align: center;
+    padding: 0 10px;
+}
+.label {
+    font-size: 14px;
+}
+
+input[type="tel"], 
+input[type="text"],
+input[type="file"],
+input[type="date"],
+input[type="email"],
+textarea{
+    width: 100%;
+    height: 20px;
+    padding: 15px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+
+input[type="radio"] {
+    margin-top: 8px;
+}
+
+
+input:focus, select:focus, textarea:focus{
+    outline: 1px solid #45a049;
+}
+input[type="file"]{
+    border: none;
+    padding: 0;
+}
+  
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0px 0px 0px;
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.fotos-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo a{
+    font-size: 30px;
+}
+
+img.fotos {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    background-color: #ffffff; /* Cor de fundo */
+    color: #000000; /* Cor do texto */
+    font-size: 14px; /* Tamanho do texto */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    height: auto; /* Deixe o navegador calcular automaticamente */
+    min-height: 40px; /* Altura mínima */
+    padding: 10px; /* Ajuste o espaçamento interno */
+}
+
+option {
+    background-color: #ffffff; /* Cor de fundo das opções */
+    color: #000000; /* Cor do texto das opções */
+}
+
+option:checked {
+    font-weight: bold;
+    background-color: #45a049;
+    color: #ffffff;
+}

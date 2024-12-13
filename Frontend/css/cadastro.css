@@ -1,0 +1,102 @@
+main {
+    display: flex;
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: #2D24EF;
+}
+   
+#left {
+    flex: 0.8;
+    padding: 0 50px;
+}
+   
+#right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    text-align: left;
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+h4{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 20px;
+    color: #f5eeee;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-left: 18%;
+}
+
+.container {
+    width: 70%;
+    height: 50%;
+    margin-top: 20px;
+    margin-left: 20%;
+    padding: 30px;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    padding-bottom: 400px;
+}
+
+
+label {
+    display: block;
+    font-size: 16px;
+}
+  
+ 
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="password"]{
+    margin-bottom: 30px;
+}
+
+input[type="text"], input[type="password"]:focus{
+    outline: none;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {  
+    background-color: #45a049;
+}
+
+img.imgLateral {
+    width: 500px;
+
+}
+.logo{
+    text-align: right;
+    padding-bottom: 90px;
+    padding-left: 40px;
+    font-size: 18px;
+}

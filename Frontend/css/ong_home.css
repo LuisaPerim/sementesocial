@@ -1,0 +1,103 @@
+/* Define a cor de fundo do site */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2D24EF;
+}
+
+/* Estilo do header */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #2D24EF;
+    border-bottom: 2px solid #fff;
+}
+
+header .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+header .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+header .header-buttons button {
+    background-color: #fff;
+    color: #2D24EF;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+header .header-buttons button:hover {
+    background-color: #ddd;
+}
+
+/* Estilo principal */
+main {
+    padding: 20px;
+}
+
+.voluntarios-section h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.voluntarios-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: left;
+}
+
+/* Card de voluntário */
+.voluntarios-list .voluntario-card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    color: #000;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transições suaves */
+}
+
+.voluntarios-list .voluntario-card:hover {
+    transform: translateY(-5px); /* Levanta o card ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Intensifica a sombra no hover */
+}
+
+.voluntarios-list .voluntario-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.voluntarios-list .voluntario-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.voluntarios-list .voluntario-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}

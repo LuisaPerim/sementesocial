@@ -1,0 +1,228 @@
+body {
+    height: 100vh;
+    background-color: #2D24EF;
+}
+
+main {
+    padding-bottom: 30px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+    background-color: transparent;
+    border-bottom: 1px solid #ccc;
+}
+
+.left-header{
+    display: flex;
+    justify-content:  flex-start;
+    margin-left: 50px;
+}
+  
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+    margin-top: 20px;
+    border: 1px solid #fff;
+}
+  
+.search-bar {
+    position: relative;
+    margin-right: 50px;
+    padding-bottom: 8px;
+}
+  
+.search-bar input[type="search"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+    font-size: 10px;
+}
+.search-bar input[type="search"]:focus{
+    outline: none;
+} 
+.search-bar img {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.search-bar input[type="search"]::placeholder {
+    font-size: 10px;
+    opacity: 0.5; /* Muda a opacidade do placeholder para 50% */
+    color: #666; /* Muda a cor do placeholder para cinza */
+}
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #f0f0f0;
+    opacity: 0.9;
+    padding: 20px;
+    display: none;
+    transition: transform 0.3s; /* Adiciona uma transição para a abertura e fechamento da barra lateral */
+}
+  
+.sidebar-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+  
+.close-btn {
+    background-color: transparent;
+    border: none;
+    padding: 5px 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+  
+.close-btn:hover {
+    color: #2D24EF;
+    background-color: #ccc;
+    border-radius: 30%;
+}
+  
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+  
+.sidebar li {
+    margin-bottom: 10px;
+}
+  
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+}
+  
+.sidebar a:hover {
+    color: #666;
+}
+  
+/* Adiciona uma classe para quando a barra lateral estiver aberta */
+.sidebar.open {
+    display: block;
+    transform: translateX(0);
+}
+  
+  /* Adiciona uma classe para quando a barra lateral estiver fechada */
+.sidebar.closed {
+    transform: translateX(-200px);
+}
+
+
+#catalogo, #catalogoMatches {
+    margin: 0 auto;
+    max-width: 80%;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#catalogo .container, #catalogoMatches .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ong-card {
+    width: 200px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    background-color: #fff;
+}
+
+.ong-card .matchesCard{
+    align-items: left;
+}
+
+.img-circle{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #d0cbcb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.img-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ong-card p {
+    margin-bottom: 3px;
+}
+
+.ong-card p.nome {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.ong-card p.cat{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.heart img{
+    margin-top: 8px;
+    width: 22px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+/*Animação match*/
+#match-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2D24EF;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+    font-size: 14px;
+}
+
+#match-notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#match-notification.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}

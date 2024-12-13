@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semente Social</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+<body>
+    <main>
+        <!-- Seção esquerda da página -->
+        <section id="left">
+
+            <h4>“O amor ao próximo não conhece fronteiras ideológicas ou religiosas” - Martin Niemoller</h4>
+            
+            <!-- Contêiner para agrupar o formulário -->
+            <div class="container">
+                <!-- Formulário de cadastro -->
+                <form>
+                    <!-- Título do formulário -->
+                    <h3>Faça seu cadastro</h3>
+                    
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" placeholder="Username" id="usuario" name="usuario" required><br>
+                    
+                    <label for="password">Senha:</label>
+                    <input type="password" placeholder="senha" id="password" name="password" required>
+                    
+                    <!-- Opção de cadastro para ONG ou Voluntário -->
+                    <div>
+                        Gostaria de se cadastrar como:<br/>
+                        
+                        <!-- Opção "ONG" marcada por padrão -->
+                        <input type="radio" name="cadastro" value="ONG" checked>
+                        <label class="label">ONG</label><br>
+                        
+                        <!-- Opção "Voluntário" como alternativa -->
+                        <input type="radio" name="cadastro" value="Voluntario">
+                        <label class="label">Voluntário</label>
+                    </div>
+                    
+                    <!-- Botão para submeter o formulário de cadastro -->
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Seção direita da página -->
+        <section id="right">
+            <div class="logo">
+                <a href="../index.html"> Semente<span class="s2">Social</span></a> <!-- Link para a página inicial -->
+            </div>
+            
+            <img src="../images/imagemCadastro.png" alt="cadastro" class="imgLateral"/>
+        </section>
+    </main>
+    <script src="../javascript/cadastrarUsuario.js"></script>
+</body>
+</html>

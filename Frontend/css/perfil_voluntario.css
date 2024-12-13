@@ -1,0 +1,146 @@
+header {
+    background-color: #2D24EF;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .left-header {
+    display: flex;
+    align-items: center;
+}
+
+header .avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+header .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+header .search-bar {
+    display: none; /* Ocultar no perfil */
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #ebe7e7;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #2D24EF;
+}
+
+.label {
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fefefe;
+    box-sizing: border-box;
+    color: #333;
+}
+
+input[type="file"] {
+    border: none;
+    background-color: transparent;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2D24EF;
+    box-shadow: 0 0 5px rgba(45, 36, 239, 0.5);
+}
+
+button {
+    background-color: #2D24EF;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #1c19a8;
+}
+
+fieldset:last-of-type {
+    margin-bottom: 0;
+}
+
+a.excluirconta{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: red;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+

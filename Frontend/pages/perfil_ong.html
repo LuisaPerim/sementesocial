@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - ONG</title>
+    <link rel="stylesheet" href="../css/ong_home.css">
+    <link rel="stylesheet" href="../css/perfil_ong.css">
+</head>
+<body>
+    <header>
+        <div class="avatar">
+            <a href="./home_ong.html">
+                <img src="../images/avatar.png" alt="Avatar da ONG">
+            </a>
+        </div>
+        <div class="header-buttons">
+            <button id="perfil-btn">Perfil</button>
+            <button id="sair-btn">Sair</button>
+        </div>
+    </header>
+    <section id="atualizar">
+        <div class="container">
+            <!-- Formulário para atualização da ONG -->
+            <form>
+                <!-- Agrupando os campos do formulário relativos aos dados da ONG -->
+                <fieldset>
+                    <legend>Atualize seus dados</legend>
+
+                    <label class="label" for="nome">Nome da ONG:</label>
+                    <input type="text" name="nome" required>
+
+                    <label class="label" for="tel">Telefone:</label>
+                    <input type="tel" name="tel" required>
+
+                    <label class="label" for="email">Email:</label>
+                    <input type="email" name="email" required>
+
+                    <label class="label" for="resp">Nome do Responsável:</label>
+                    <input type="text" name="resp" required>
+
+                    <label class="label" for="cnpj">CNPJ:</label>
+                    <input type="text" name="cnpj" disabled>
+
+                    <label class="label" for="cat">Área de Atuação:</label>
+                    <select name="cat">
+                        <option></option> <!-- Opção vazia para o campo não vir preenchido por padrão -->
+                        <option value="meio ambiente">Meio Ambiente</option>
+                        <option value="saúde">Saúde</option>
+                        <option value="crianças">Crianças</option>
+                        <option value="idosos">Idosos</option>
+                        <option value="pessoas em geral">Pessoas em geral</option>
+                        <option value="lgbt">LGBT</option>
+                        <option value="mulheres">Mulheres</option>
+                        <option value="indígenas">Indígenas</option>
+                        <option value="moradores de rua">Moradores de rua</option>
+                        <option value="inclusão social">Inclusão Social</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </fieldset>
+
+                <!-- Agrupando os campos do formulário relativos à localização da ONG -->
+                <fieldset>
+                    <legend>Localização</legend>
+
+                    <!-- Campo para selecionar o estado da ONG -->
+                    <label class="label" for="estado">Estado:</label>
+                    <select id="estado" name="estado">
+                        <option></option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+
+                    <label class="label" for="cidade">Cidade:</label>
+                    <input type="text" name="cidade" />
+
+                    <label class="label" for="end">Endereço:</label>
+                    <input type="text" name="end" />
+                </fieldset>
+
+                <!-- Agrupando os campos do formulário relativos à imagem da ONG -->
+                <fieldset>
+                    <legend>Foto:</legend>
+
+                    <!-- Campo para o upload do logotipo da ONG -->
+                    <label class="label" for="foto">Logo da ONG:</label>
+                    <input type="file" name="foto" />
+                </fieldset>
+
+                <!-- Botão para submeter o formulário -->
+                <button type="submit">Atualizar</button>
+            </form>
+            <a href="#" class="excluirconta">Excluir conta</a>
+        </div>
+    </section>
+    <script src="../javascript/perfil_ong.js"></script>
+    <script src="../javascript/ongHome.js"></script>
+    <script src="../javascript/sair.js"></script>
+</body>
+</html>

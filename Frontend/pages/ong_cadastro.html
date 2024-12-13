@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semente Social</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/ong_cadastro.css"> 
+</head>
+<body>
+    <main>
+        <!-- Seção à esquerda com o formulário de cadastro da ONG -->
+        <section id="left">
+            <h2>Você está se cadastrando como ONG:</h2>
+            <div class="container">
+                <!-- Formulário para cadastro da ONG -->
+                <form>
+                    <!-- Agrupando os campos do formulário relativos aos dados da ONG -->
+                    <fieldset>
+                        <legend>Dados da ONG</legend>
+
+                        <label class="label" for="nome">Nome da ONG:</label>
+                        <input type="text" name="nome" required>
+
+                        <label class="label" for="tel">Telefone:</label>
+                        <input type="tel" name="tel" required>
+
+                        <label class="label" for="email">Email:</label>
+                        <input type="email" name="email" required>
+
+                        <label class="label" for="resp">Nome do Responsável:</label>
+                        <input type="text" name="resp" required>
+
+                        <label class="label" for="cnpj">CNPJ:</label>
+                        <input type="text" name="cnpj" required>
+
+                        <label class="label" for="cat">Área de Atuação:</label>
+                        <select name="cat">
+                            <option></option> <!-- Opção vazia para o campo não vir preenchido por padrão -->
+                            <option value="meio ambiente">Meio Ambiente</option>
+                            <option value="saúde">Saúde</option>
+                            <option value="crianças">Crianças</option>
+                            <option value="idosos">Idosos</option>
+                            <option value="pessoas em geral">Pessoas em geral</option>
+                            <option value="lgbt">LGBT</option>
+                            <option value="mulheres">Mulheres</option>
+                            <option value="indígenas">Indígenas</option>
+                            <option value="moradores de rua">Moradores de rua</option>
+                            <option value="inclusão social">Inclusão Social</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </fieldset>
+
+                    <!-- Agrupando os campos do formulário relativos à localização da ONG -->
+                    <fieldset>
+                        <legend>Localização</legend>
+
+                        <!-- Campo para selecionar o estado da ONG -->
+                        <label class="label" for="estado">Estado:</label>
+                        <select id="estado" name="estado">
+                            <option></option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+
+                        <label class="label" for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" />
+
+                        <label class="label" for="end">Endereço:</label>
+                        <input type="text" name="end" />
+                    </fieldset>
+
+                    <!-- Agrupando os campos do formulário relativos à imagem da ONG -->
+                    <fieldset>
+                        <legend>Foto:</legend>
+
+                        <!-- Campo para o upload do logotipo da ONG -->
+                        <label class="label" for="foto">Logo da ONG:</label>
+                        <input type="file" name="foto" />
+                    </fieldset>
+
+                    <!-- Botão para submeter o formulário -->
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Seção à direita contendo o logotipo e imagens relacionadas -->
+        <section id="right">
+            <!-- Logotipo com link para a página inicial -->
+            <div class="logo">
+                <a href="../index.html">Semente<span class="s2">Social</span></a>
+            </div>
+
+            <!-- Grupo de imagens relacionadas à ONG -->
+            <div class="fotos-group">
+                <img src="../images/Captura de tela 2024-10-03 153019.png" alt="ong meio ambiente" class="fotos"/>
+            </div>
+        </section>
+    </main>
+    <script src="../javascript/ongCadastro.js"></script>
+</body>
+</html>

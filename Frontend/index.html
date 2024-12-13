@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semente Social</title>
+
+    <link rel="stylesheet" href="./css/styles.css"> 
+    <link rel="stylesheet" href="./css/main.css"> 
+</head>
+<body>
+    <main>
+        <!-- Seção à esquerda contendo o slideshow de imagens -->
+        <section id="left">
+            <!-- Container para o slideshow -->
+            <div class="slideshow-container">
+                
+                <div class="mySlides fade">
+                  <img src="./images/Info1.png" style="width:100%"> 
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="./images/Infor2.png" style="width:100%"> 
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="./images/Info3.png" style="width:100%"> 
+                </div>
+              
+                <!-- Botões de navegação para avançar ou retroceder entre os slides -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!-- Botão para o slide anterior -->
+                <a class="next" onclick="plusSlides(1)">&#10095;</a> <!-- Botão para o próximo slide -->
+            </div>
+
+            <br>
+
+            <!-- Indicadores em formato de ponto (dots) para cada slide -->
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </section>
+
+        <!-- Seção à direita contendo o logotipo, citação e o formulário de login -->
+        <section id="right">
+            <!-- Logotipo da plataforma Semente Social -->
+            <div class="logo">
+                <a href="./index.html">Semente<span class="s2">Social</span></a> <!-- Link para a página inicial -->
+            </div>
+
+            <div class="quote">
+                <p>"O amor ao próximo não conhece fronteiras ideológicas ou religiosas"</p>
+                <p>- Martin Niemoller</p>
+            </div>
+
+            <!-- Seção que contém o formulário de login -->
+            <section class="container">
+                <!-- Formulário de login -->
+                <form id="login-form">
+                    <!-- Campo para o nome de usuário -->
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required> <!-- Campo obrigatório -->
+                    </div>
+
+                    <!-- Campo para a senha -->
+                    <div class="form-group">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" required> <!-- Campo obrigatório -->
+                    </div>
+
+                    <!-- Botão para efetuar o login -->
+                    <button type="submit">Entrar</button>
+                </form>
+
+                <!-- Link para a página de cadastro, caso o usuário ainda não seja registrado -->
+                <div class="signup-link">
+                    <p>Ainda não é cadastrado? <a href="./pages/cadastro.html">Cadastre-se</a></p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- Importando o script para o funcionamento do slideshow -->
+    <script src="./javascript/script_carrosel.js"></script>
+    <script src="./javascript/login.js"></script>
+</body>
+</html>
