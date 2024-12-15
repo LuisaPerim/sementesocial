@@ -35,5 +35,3 @@ Digite o comando "npm start" para iniciar o servidor. Certifique-se de que não 
 #### 6. Abra a pasta do frontend
 Clique com o botão direito no arquivo index.html e selecione "Open with Live Server".
 #### 7. O frontend será carregado automaticamente no navegador.
-
-Divirta-se explorando e utilizando o projeto! 🎉
